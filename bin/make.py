@@ -16,7 +16,7 @@ def _raise_err(format, *args) :
 def _load_yaml(yaml_file) :
     print(u'load: ' + yaml_file)
     with open(yaml_file, u'r') as f :
-        return yaml.load(f.read())
+        return yaml.load(f.read(),Loader=yaml.FullLoader)
 
 
 
